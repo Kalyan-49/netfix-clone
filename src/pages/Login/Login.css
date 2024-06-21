@@ -1,0 +1,96 @@
+.login {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../../assets/background_banner.jpg);
+  padding: 2rem 8%;
+}
+.logo-image {
+  width: 10%;
+}
+.login-form {
+  width: 100%;
+  max-width: 45rem;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 0.4rem;
+  padding: 6rem;
+  margin: 10rem auto;
+}
+.login-form h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+}
+.login-form input {
+  display: block;
+  margin-top: 1rem;
+  padding: 2rem;
+  width: 100%;
+  background-color: rgba(48, 47, 47, 0.699);
+  color: white;
+  border-radius: 0.5rem;
+}
+.login-form input::placeholder {
+  color: rgba(255, 248, 248, 0.831);
+  font-size: 1.5rem;
+  padding-left: 1rem;
+}
+.singup-btn {
+  width: 100%;
+  display: block;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background-color: rgba(220, 32, 32, 0.936);
+  color: rgba(255, 255, 255, 0.864);
+  font-size: 2rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+.form-help {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #b3b3b3;
+  font-size: 1.5rem;
+}
+.remember {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.remember input {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  margin-top: 0;
+}
+.remember label,
+p {
+  cursor: pointer;
+}
+.form-switch {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.form-switch p {
+  color: #948c8cdb;
+  font-size: 1.7rem;
+  margin-top: 1.5rem;
+}
+.form-switch p span {
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 1.7rem;
+  font-weight: 600;
+  padding-left: 0.5rem;
+}
+@media (max-width: 480px) {
+  .login {
+    padding: 1rem 5%;
+  }
+  .login-form {
+    padding: 2rem;
+    margin-top: 5rem;
+  }
+}

@@ -1,0 +1,40 @@
+.footer {
+  padding: 4rem 4%;
+  max-width: 100rem;
+  margin: 0 auto;
+}
+.footer-icons {
+  display: flex;
+  gap: 2rem;
+  cursor: pointer;
+  margin: 2rem 0;
+}
+.footer-icons img {
+  width: 4rem;
+}
+.footer .list-items ul {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+.footer .list-items ul li {
+  list-style: none;
+  padding-left: 2rem;
+  font-size: 1.7rem;
+}
+.footer .copy-right {
+  margin: 2rem;
+  color: grey;
+  font-size: 1.5rem;
+}
+@media (max-width: 800px) {
+  .footer-icons img {
+    width: 25px;
+  }
+  .footer .list-items ul {
+    grid-template-columns: auto auto;
+    gap: 8px;
+    font-size: 14px;
+  }
+}

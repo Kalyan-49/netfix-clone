@@ -1,0 +1,97 @@
+.hero {
+  position: relative;
+}
+.hero-banner-img {
+  width: 100%;
+  mask-image: linear-gradient(to right, transparent, rgb(0, 0, 0) 75%);
+  -webkit-mask-image: linear-gradient(to right, transparent, rgb(0, 0, 0) 75%);
+}
+.hero-caption {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 4rem;
+}
+.hero-title {
+  width: 90%;
+  max-width: 42rem;
+}
+.hero-img-description {
+  max-width: 70rem;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.hero-btns {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 5rems;
+}
+.hero-btns .btn img {
+  width: 2.5rem;
+}
+.hero-btns .btn {
+  /* display: inline-flex; */
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  gap: 1rem;
+  background: white;
+  border-radius: 0.5rem;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+}
+.hero-btns .btn.dark-btn {
+  color: #fff;
+  background: #6d6d6eb3;
+}
+.hero-btns .btn:hover {
+  background: #ffffffbf;
+}
+.hero-btns .btn.dark-btn:hover {
+  background: #6d6d6e66;
+}
+.more-cards {
+  padding-left: 4%;
+}
+
+@media (max-width: 1024px) {
+  .hero-caption .title-cards {
+    display: none;
+  }
+  .hero-btns {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 800px) {
+  .hero-caption {
+    padding-left: 4%;
+  }
+  .caption-img {
+    margin-bottom: 10px;
+    width: 40%;
+  }
+  .hero-caption p {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  .hero-btn .btn img {
+    width: 20px;
+  }
+  .more-cards {
+    padding-left: 4%;
+  }
+}
+
+@media (max-width: 500px) {
+  .caption-img {
+    display: none;
+  }
+  .hero-btns .btn img {
+    width: 15px;
+  }
+  .hero-btns .btn {
+    padding: 4px 10px;
+    gap: 5px;
+    font-size: 10px;
+  }
+}
